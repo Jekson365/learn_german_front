@@ -1,0 +1,10 @@
+@import '../../src/style/index.scss';
+
+.input-field {
+    border-radius: 5px;
+    border: 3px solid $color2;
+    padding: 10px;
+}
+.submit-button {
+    background-color: 'red';
+}
