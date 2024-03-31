@@ -1,10 +1,73 @@
 @import '../../src/style/index.scss';
-
+* {
+    font-family: sans-serif;
+}
 .input-field {
     border-radius: 5px;
     border: 3px solid $color2;
     padding: 10px;
+    outline: 0;
+    font-weight: bold;
 }
 .submit-button {
-    background-color: 'red';
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    border: 0;
+    padding: 15px 30px;
+    outline: 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 15px;
+    background-color: $color2;
+}
+.new-word-form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.select-field {
+    padding: 0 7px;
+    outline: 0;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid $color2;
+}
+.cover {
+    width: fit-content;
+    height: 100px;
+}
+.words {
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    margin-top: 50px;
+}
+.meaning {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    color: $color3;
+    font-size: 0.8em;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: $color4;
+}
+.flex-cont {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
 }
